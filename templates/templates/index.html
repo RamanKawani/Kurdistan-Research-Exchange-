@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Research List</h2>
+<ul>
+    {% for research in researches %}
+    <li><a href="{{ url_for('research_details', id=research.id) }}">{{ research.title }}</a> by {{ research.author }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
