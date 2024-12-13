@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ research.title }}</h2>
+<p><strong>Author:</strong> {{ research.author }}</p>
+<p><strong>Description:</strong> {{ research.description }}</p>
+<p><a href="{{ research.filepath }}" download>Download File</a></p>
+{% endblock %}
