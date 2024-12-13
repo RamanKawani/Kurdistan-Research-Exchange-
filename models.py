@@ -1,5 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 
+# Initialize SQLAlchemy
 db = SQLAlchemy()
 
 class Research(db.Model):
@@ -11,3 +12,4 @@ class Research(db.Model):
 
     def __repr__(self):
         return f'<Research {self.title}>'
+
